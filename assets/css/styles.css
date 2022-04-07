@@ -10,6 +10,7 @@
     --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
+    --linkup-color: rgb(255, 0, 0);
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);;
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);;
@@ -96,6 +97,18 @@ body.dark-theme{
 
 .change-theme:hover{
     color: var(--first-color);
+}
+
+/*==================== LINK UP ====================*/
+
+.linkup{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.linkup:hover{
+    color: var(--linkup-color);
+    font-weight: bold;
 }
 
 /*==================== BASE ====================*/
