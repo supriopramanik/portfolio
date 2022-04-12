@@ -655,12 +655,12 @@ img{
     background-color: var(--container-color);
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px rgb(47, 255, 0);
     transition: .3s;
 }
 
 .services__content:hover{
-    box-shadow: 0 4px 8px rgba(0,0,0,.15);
+    box-shadow: 0 4px 8px #576EE0;
 }
 
 .services__icon{
@@ -691,7 +691,7 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.15);
+    background-color: rgb(13, 13, 14);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -728,12 +728,12 @@ img{
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: rgb(255, 0, 0);;
     cursor: pointer;
 }
 
 .services__modal-icon{
-    color: var(--first-color);
+    color: rgb(255, 0, 0);
     margin-right: var(--mb-0-25);
 }
 
