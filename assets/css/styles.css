@@ -155,12 +155,14 @@ img{
 
 .section__title{
     font-size: var(--h1-font-size);
+    transition: all 0.9s ease-in-out;
 }
 
 .section__subtitle{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    transition: all 0.9s ease-in-out;
 }
 
 .section__title,
@@ -321,6 +323,7 @@ img{
 
 .home__title{
     font-size: var(--big-font-size);
+    transition: all 0.9s ease-in-out;
 }
 
 .home__subtitle{
