@@ -192,7 +192,7 @@ img{
 /*==================== NAV ====================*/
 .nav{
     max-width: 968px;
-    height: var(--header-height);
+    height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -623,7 +623,7 @@ img{
 
 .qualification__line{
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
@@ -968,7 +968,7 @@ img{
 }
 
 .footer__color{
-    color: #F35C13;
+    color: #0bebff;
 }
 
 .footer__title,
@@ -984,7 +984,7 @@ img{
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color: var(--first-color);
+    background-color: #1631cb;
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
@@ -1023,8 +1023,69 @@ img{
     background-color: var(--text-color-light);
 }
 
+/* Extra CSS */
+
+/* .wrapper{
+    height: 100px;
+    width: 360px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+  } */
+  /* .wrapper .display,
+  .wrapper span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  .display #time{
+    line-height: 85px;
+    margin-left: 75px;
+    color: #fff;
+    font-weight: var(--font-medium);
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+  }
+  @keyframes animate {
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  .wrapper span{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: inherit;
+  }
+  .wrapper span:first-child{
+    filter: blur(7px);
+  }
+  .wrapper span:last-child{
+    filter: blur(20px);
+  }
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 400px) {
+    /* Extra CSS */
+    .display #time{
+        line-height: 85px;
+        margin-left: -4px;
+        color: #fff;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 1.5s linear infinite;
+      }
+}
+
 @media screen and (max-width: 350px) {
     .container{
         margin-left: var(--mb-1);
@@ -1081,6 +1142,18 @@ img{
     .testimonial__description{
         text-align: center;
     }
+
+    /* Extra CSS */
+    .display #time{
+        line-height: 85px;
+        margin-left: -4px;
+        color: #fff;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 1.5s linear infinite;
+      }
 }
 
 /* For medium devices */
@@ -1141,8 +1214,8 @@ img{
     }
 
     .nav{
-        height: calc(var(--header-height) + 1.5rem);
         column-gap: 1rem;
+        height: 45px;
     }
     .nav__icon,
     .nav__close,
