@@ -229,14 +229,27 @@ setInterval(()=>{
     time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
   });
 
+// Scroll Reveal
+ScrollReveal({
+    reset: true,
+    distance: '400px',
+    duration: 1500,
+    delay: 200
+});
 
-// Tawk.to
-// var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-// (function(){
-// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-// s1.async=true;
-// s1.src='https://embed.tawk.to/60da1fae7f4b000ac039ffcf/1f9a0ngnd';
-// s1.charset='UTF-8';
-// s1.setAttribute('crossorigin','*');
-// s0.parentNode.insertBefore(s1,s0);
-// })();
+ScrollReveal().reveal(
+    '.home__scroll, .section__title, .home__title, .section__subtitle, .home__description, .home__subtitle, .button--flex1', 
+    { delay: 500, origin: 'left' });
+ScrollReveal().reveal(
+    '.home__img', { delay: 500, origin: 'bottom' });
+ScrollReveal().reveal(
+    '.home__social-icon', { delay: 500, origin: 'left', interval: 200 });
+
+//Javacript for the scroll indicator bar
+window.addEventListener("scroll", () => {
+    const indicatorBar = document.querySelector(".scroll-indicator-bar");  
+    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollValue = (pageScroll / height) * 100;
+    indicatorBar.style.width = scrollValue + "%";
+});
